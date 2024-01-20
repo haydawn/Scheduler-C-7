@@ -43,6 +43,8 @@ The following animation demonstrates the application functionality:
 [Javascript.info](https://javascript.info/)
 [W3Schools](https://www.w3schools.com/js/)
 [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
+[Bootstrap] (https://getbootstrap.com/)
+
 
 
 ## Deployed Project Link 
