@@ -26,16 +26,13 @@ The app should:
 
 The following animation demonstrates the application functionality:
 
-![Starter Demo]()
+![Starter Demo](assets/images/05-third-party-apis-homework-demo.gif)
   
 
 ## Completed Calender Screenshots
 
-![]()
+![Calendar App Screenshot ](assets/images/Screenshot1.png)
 
-![]()
-
-![]()
 
 
 

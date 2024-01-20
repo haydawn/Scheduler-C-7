@@ -23,7 +23,6 @@
         }
         });
     }
-    
     updateTimeBlocks(); 
     setInterval(updateTimeBlocks, 60000);
     
@@ -47,4 +46,4 @@
     localStorage.setItem("events", JSON.stringify(events));
     
     });
-    
+
