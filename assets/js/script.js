@@ -21,7 +21,7 @@
         } else {
             $(this).removeClass("past present").addClass("future");
         }
-
+       
         });
     }
     updateTimeBlocks(); 
@@ -31,13 +31,19 @@
     var hour = parseInt($(this).siblings(".description").attr("data-hour"));
     var text = $(this).siblings(".description").val();
 
-    if (existingEventIndex !== -1) {
-    events[existingEventIndex].text = text;
-    } else {
-    events.push({ hour: hour, text: text });
-    }
+    var index = events.findIndex(function (event) {
+        return event.hour === hour;
+      });
+      
+      // Update or add the event
+      if (index !== -1) {
+        events[index].text = text;
+      } else {
+        events.push({ hour: hour, text: text });
+      }
 
     // Save events to local storage
     localStorage.setItem("events", JSON.stringify(events));
-
+    
+    setInterval(updateTimeBlocks, 60000);
     });
