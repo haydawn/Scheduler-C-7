@@ -21,8 +21,10 @@
         } else {
             $(this).removeClass("past present").addClass("future");
         }
+
         });
     }
+    updateTimeBlocks(); 
     
    // When the save button is clicked
    $(".saveBtn").on("click", function () {
@@ -37,5 +39,5 @@
 
     // Save events to local storage
     localStorage.setItem("events", JSON.stringify(events));
-    
+
     });
