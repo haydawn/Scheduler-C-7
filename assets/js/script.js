@@ -34,4 +34,8 @@
     } else {
     events.push({ hour: hour, text: text });
     }
+
+    // Save events to local storage
+    localStorage.setItem("events", JSON.stringify(events));
+    
     });
