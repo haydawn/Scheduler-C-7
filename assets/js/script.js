@@ -12,7 +12,7 @@
         var currentHour = dayjs().hour();
     
         $(".time-block").each(function () {
-        var blockHour = parseInt($(this).attr("data-hour"));
+        var blockHour = parseInt($(this).attr("hour"));
     
         if (blockHour < currentHour) {
             $(this).removeClass("present future").addClass("past");
@@ -28,7 +28,7 @@
     
    // When the save button is clicked
    $(".saveBtn").on("click", function () {
-    var hour = parseInt($(this).siblings(".description").attr("data-hour"));
+    var hour = parseInt($(this).siblings(".description").attr("hour"));
     var text = $(this).siblings(".description").val();
 
     var index = events.findIndex(function (event) {
